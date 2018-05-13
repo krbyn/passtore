@@ -7,3 +7,4 @@ bin/
 gen/
 local.properties
 *.iml
+app/objectbox-models/
