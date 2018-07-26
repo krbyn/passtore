@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,61 +9,35 @@
     tools:showIn="@layout/activity_pass"
     android:orientation="vertical">
 
-    <com.google.android.flexbox.FlexboxLayout
+    <ProgressBar
+        android:id="@+id/load_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:id="@+id/password_rv"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <com.krbyn.passtore.view.SquareTextView
-            android:layout_width="220dp"
-            android:layout_height="80dp"
-            android:text="1" />
-        <com.krbyn.passtore.view.SquareTextView
-            android:layout_width="220dp"
-            android:layout_height="80dp"
-            android:text="2" />
-        <com.krbyn.passtore.view.SquareTextView
-            android:layout_width="220dp"
-            android:layout_height="80dp"
-            android:text="3" />
-        <com.krbyn.passtore.view.SquareTextView
-            android:layout_width="220dp"
-            android:layout_height="80dp"
-            android:text="4" />
-        <com.krbyn.passtore.view.SquareTextView
-            android:layout_width="220dp"
-            android:layout_height="80dp"
-            android:text="5" />
+    </android.support.v7.widget.RecyclerView>
 
-    </com.google.android.flexbox.FlexboxLayout>
-
-    <com.google.android.flexbox.FlexboxLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <com.krbyn.passtore.view.SquareTextView
-            android:layout_width="220dp"
-            android:layout_height="80dp"
-            android:text="1" />
-        <com.krbyn.passtore.view.SquareTextView
-            android:layout_width="220dp"
-            android:layout_height="80dp"
-            android:text="2" />
-        <com.krbyn.passtore.view.SquareTextView
-            android:layout_width="220dp"
-            android:layout_height="80dp"
-            android:text="3" />
-        <com.krbyn.passtore.view.SquareTextView
-            android:layout_width="220dp"
-            android:layout_height="80dp"
-            android:text="4" />
-        <com.krbyn.passtore.view.SquareTextView
-            android:layout_width="220dp"
-            android:layout_height="80dp"
-            android:text="5" />
-
-
-    </com.google.android.flexbox.FlexboxLayout>
-
-
-
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>

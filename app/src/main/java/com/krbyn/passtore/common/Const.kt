@@ -14,5 +14,7 @@ class Const private constructor() {
          * Password key in shared preferences
          */
         const val SHARED_PREF_PASS_KEY = "SHARED_PREF_ID_KEY"
+
+        const val SHARED_PREF_FIRST_START = "FIRST_START"
     }
 }
